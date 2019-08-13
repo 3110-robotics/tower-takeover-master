@@ -1,0 +1,24 @@
+PID text file pseudocode
+Note this is just me trying to find a good implementation for a PID controller for my bot
+Thanks to George Gillard for making the document reference for this PID 
+http://smithcsrobot.weebly.com/uploads/6/0/9/5/60954939/pid_control_document.pdf
+
+Ku = a //Value for Kp at which the PID results oscillate
+Tu = b //Oscillation Period
+Kp = 0.6 * Ku //Proportional Constant
+Ki = (1.2 * Ku)/Tu //Integral Constant
+Kd = (3 * Ku * Tu)/40 //Derivative Constant
+
+while(error != 0){
+error = target - sensor readings
+
+integral = integral + error
+if(error == 0 || abs(error) > n){
+integral = 0
+}
+
+derivative = error - previous_error
+
+speed = (Kp * error) + (Ki * integral) + (Kd * derivative)
+previous_error = error
+}

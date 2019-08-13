@@ -1,0 +1,12 @@
+void drive(int a, int b, int c, int d);
+void pushyboi(bool a, bool b);
+int sgn(int a);
+void pre_auton();
+void auton();
+void usercontrol();
+void barlift();
+void chaincont(int a);
+int totcalc(int a, int b);
+void autonselect();
+void Picking(vex::color colors,int padding);
+void Where_Pressed();

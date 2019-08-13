@@ -1,0 +1,2 @@
+25.8395996cm - circumference of the wheels - 360 degrees or 2 pi radians
+(distance Travelled / 25.8395996) * 360 = degrees

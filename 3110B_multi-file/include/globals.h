@@ -1,0 +1,10 @@
+extern vex::competition Competition; 
+extern vex::controller juulsticc;
+extern vex::brain thinkboi;
+extern vex::motor FL;
+extern vex::motor BL;
+extern vex::motor FR;
+extern vex::motor BR;
+extern vex::motor pusher;
+extern vex::motor_group L;
+extern vex::motor_group R;
