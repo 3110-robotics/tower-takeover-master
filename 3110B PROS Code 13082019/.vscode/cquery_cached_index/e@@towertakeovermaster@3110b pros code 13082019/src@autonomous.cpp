@@ -17,10 +17,6 @@
 
 acontrol::autons Autons; //creates autons object for the autonomous functions
 
-constexpr unsigned int str2int(const char* str, int h = 0)
-{
-    return !str[h] ? 5381 : (str2int(str, h+1) * 33) ^ str[h];
-}
 
 void acontrol::autons::autonTriggerer(auton_type Type){
   switch (Type){
